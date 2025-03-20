@@ -17,7 +17,7 @@ import { parseDate } from "@internationalized/date";
 import { Controller, useForm } from "react-hook-form";
 import { EditIcon } from "../icons";
 import { FC, useEffect } from "react";
-import { useGetCategoriesQuery, useGetProductQuery, useUpdateProductMutation } from "@/redux/api/inventoryApi";
+import { useGetCategoriesQuery, useGetProductQuery, useUpdateProductMutation } from "../../redux/api/inventoryApi";
 import dayjs from "dayjs";
 import { Category } from "../models";
 import Swal from "sweetalert2";

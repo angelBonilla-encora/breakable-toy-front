@@ -1,4 +1,4 @@
-import { useGetMetricsQuery } from "@/redux/api/inventoryApi";
+import { useGetMetricsQuery } from "../../redux/api/inventoryApi";
 import {
   Table,
   TableHeader,
