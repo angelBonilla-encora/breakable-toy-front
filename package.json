@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint -c .eslintrc.json ./src/**/**/*.{ts,tsx} --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
     "@heroui/button": "^2.2.16",
@@ -27,6 +28,7 @@
     "@react-aria/visually-hidden": "3.8.20",
     "@react-types/shared": "3.28.0",
     "@reduxjs/toolkit": "^2.6.1",
+    "@testing-library/dom": "^10.4.0",
     "axios": "^1.8.3",
     "clsx": "2.1.1",
     "dayjs": "^1.11.13",
@@ -41,6 +43,9 @@
     "tailwindcss": "3.4.16"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "20.5.7",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
@@ -57,10 +62,13 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "4.1.4",
+    "jsdom": "^26.0.0",
+    "msw": "^2.7.3",
     "postcss": "8.4.38",
     "prettier": "3.3.3",
     "typescript": "5.6.3",
     "vite": "^5.2.0",
-    "vite-tsconfig-paths": "^4.3.2"
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^3.0.9"
   }
 }

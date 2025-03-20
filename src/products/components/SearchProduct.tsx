@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useGetCategoriesQuery } from "@/redux/api/inventoryApi";
+import { useGetCategoriesQuery } from "../../redux/api/inventoryApi";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
 import { Card, Select, SelectItem, Spinner } from "@heroui/react";

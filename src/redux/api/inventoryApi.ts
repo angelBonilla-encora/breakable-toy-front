@@ -6,7 +6,7 @@ export const inventoryApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: import.meta.env.VITE_API_URL,
     }),
-    tagTypes:["Products","Categories"],
+    tagTypes:["Products","Categories","Metrics"],
     endpoints: (build) => ({
         //Products
         getProducts: build.query({
@@ -59,14 +59,14 @@ export const inventoryApi = createApi({
                 url: `/products/${productId}/outofstock`,
                 method: "POST",
             }),
-            invalidatesTags:["Products"]
+            invalidatesTags:["Products","Metrics"]
         }),
         restoreProductStock : build.mutation({
             query: (productId: string) => ({
                 url: `/products/${productId}/instock`,
                 method: "PUT",
             }),
-            invalidatesTags:["Products"]
+            invalidatesTags:["Products","Metrics"]
         }),
 
         //Categories
@@ -85,7 +85,9 @@ export const inventoryApi = createApi({
         }),
         getMetrics: build.query({
             query: () => "/categories/metrics",
+            providesTags:["Metrics"],
         }),
+
     }),
 });
 

@@ -21,7 +21,7 @@ import {
   useGetProductsQuery,
   useMarkProductOutOfStockMutation,
   useRestoreProductStockMutation,
-} from "@/redux/api/inventoryApi";
+} from "../../redux/api/inventoryApi";
 import { Product, Sort, SortDirection } from "../models";
 import { EditProductModal } from ".";
 

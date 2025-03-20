@@ -12,7 +12,7 @@ import {
   Select,
   SelectItem,
 } from "@heroui/react";
-import { useCreateProductMutation, useGetCategoriesQuery } from "@/redux/api/inventoryApi";
+import { useCreateProductMutation, useGetCategoriesQuery } from "../../redux/api/inventoryApi";
 import { useForm, Controller } from "react-hook-form";
 import dayjs from "dayjs";
 import { Category } from "../models";

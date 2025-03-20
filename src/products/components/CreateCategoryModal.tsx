@@ -7,9 +7,9 @@ import {
     Button,
     Input,
   } from "@heroui/react";
-  import { useCreateCategoryMutation } from "@/redux/api/inventoryApi";
   import Swal from "sweetalert2";
   import { FC, useState } from "react";
+import { useCreateCategoryMutation } from '../../redux/api/inventoryApi';
   
   interface CreateCategoryModalProps {
     isOpen: boolean;
